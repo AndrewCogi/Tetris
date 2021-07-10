@@ -95,1297 +95,705 @@ void blockEdit(dest *pos, int blockNum, int m_d, int shape) {
 					}
 				}
 			else if(shape == 2) // 모양이 2번 모양일 때
-
 				for (int i = 0; i < 4; i++) {
-
 					if (block1[0][i] == 1) {
-
 						if (m_d == 1) arr[pos->x + i][pos->y] = 2; // make
-
 						else arr[pos->x + i][pos->y] = 0; // delete
-
 					}
-
 				}
-
 			break;
 
 		case 2: // J
-
 			if(shape == 1)//모양이 1번 모양일 때
-
 				for (int i = 0; i < 2; i++) {
-
 					for (int a = 0; a < 3; a++) {
-
 						if (block2_1[i][a] == 1) {
-
 							if(m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if(shape == 2)//모양이 2번 모양일 때
-
 				for (int i = 0; i < 3; i++) {
-
 					for (int a = 0; a < 2; a++) {
-
 						if (block2_2[i][a] == 1) {
-
 							if(m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if(shape == 3)//모양이 3번 모양일 때
-
 				for (int i = 0; i < 2; i++) {
-
 					for (int a = 0; a < 3; a++) {
-
 						if (block2_3[i][a] == 1) {
-
 							if(m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if(shape == 4)//모양이 4번 모양일 때
-
 				for (int i = 0; i < 3; i++) {
-
 					for (int a = 0; a < 2; a++) {
-
 						if (block2_4[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			break;
 
 		case 3: // L
-
 			if (shape == 1)//모양이 1번 모양일 때
-
 				for (int i = 0; i < 2; i++) {
-
 					for (int a = 0; a < 3; a++) {
-
 						if (block3_1[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if (shape == 2)//모양이 2번 모양일 때
-
 				for (int i = 0; i < 3; i++) {
-
 					for (int a = 0; a < 2; a++) {
-
 						if (block3_2[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if (shape == 3)//모양이 3번 모양일 때
-
 				for (int i = 0; i < 2; i++) {
-
 					for (int a = 0; a < 3; a++) {
-
 						if (block3_3[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if (shape == 4)//모양이 4번 모양일 때
-
 				for (int i = 0; i < 3; i++) {
-
 					for (int a = 0; a < 2; a++) {
-
 						if (block3_4[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			break;
 
 		case 4: // O
-
 			for (int i = 0; i < 2; i++) { // 얜 모양이 하나야 아주편해
-
 				for (int a = 0; a < 2; a++) {
-
 					if (block4[i][a] == 1) {
-
 						if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 						else arr[pos->x + i][pos->y + a] = 0; // delete
-
 					}
-
 				}
-
 			}
-
 			break;
 
 		case 5: // N
-
 			if(shape == 1)//모양이 1번 모양일 때
-
 				for (int i = 0; i < 2; i++) {
-
 					for (int a = 0; a < 3; a++) {
-
 						if (block5_1[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if(shape == 2)//모양이 2번 모양일 때
-
 				for (int i = 0; i < 3; i++) {
-
 					for (int a = 0; a < 2; a++) {
-
 						if (block5_2[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			break;
 
 		case 6: // T
-
 			if (shape == 1)//모양이 1번 모양일 때
-
 				for (int i = 0; i < 2; i++) {
-
 					for (int a = 0; a < 3; a++) {
-
 						if (block6_1[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if (shape == 2)//모양이 2번 모양일 때
-
 				for (int i = 0; i < 3; i++) {
-
 					for (int a = 0; a < 2; a++) {
-
 						if (block6_2[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if (shape == 3)//모양이 3번 모양일 때
-
 				for (int i = 0; i < 2; i++) {
-
 					for (int a = 0; a < 3; a++) {
-
 						if (block6_3[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if (shape == 4)//모양이 4번 모양일 때
-
 				for (int i = 0; i < 3; i++) {
-
 					for (int a = 0; a < 2; a++) {
-
 						if (block6_4[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			break;
 
 		case 7: // S
-
 			if (shape == 1)//모양이 1번 모양일 때
-
 				for (int i = 0; i < 2; i++) {
-
 					for (int a = 0; a < 3; a++) {
-
 						if (block7_1[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			else if (shape == 2)//모양이 2번 모양일 때
-
 				for (int i = 0; i < 3; i++) {
-
 					for (int a = 0; a < 2; a++) {
-
 						if (block7_2[i][a] == 1) {
-
 							if (m_d == 1) arr[pos->x + i][pos->y + a] = 2; // make
-
 							else arr[pos->x + i][pos->y + a] = 0; // delete
-
 						}
-
 					}
-
 				}
-
 			break;
-
 	}
-
 }
-
-
-
-
-
 
 
 //한 줄이 완성되었으면 없애주고 모두 한칸씩 내리는 함수
-
 void checkPoint() {
 
 	int cnt = 0;
-
-	for (int i = 0; i < y_size; i++) { // 2의 갯수 세기
-
+	// 2의 갯수 세기
+	for (int i = 0; i < y_size; i++) {
 		for (int a = 1; a < x_size; a++) {
-
 			if (arr[i][a] == 2) cnt++;
-
 		}
 
 		if (cnt == x_size - 1) {
-
-			for(int k=1; k<10; k++) arr[i][k] = 0; // 줄 없애주기
-
-
-
-			for (int c = i - 1; c >= 0; c--) { // 윗줄 차례로 당겨오기
-
+			// 줄 없애주기
+			for(int k=1; k<10; k++) arr[i][k] = 0;
+			// 윗줄 차례로 당겨오기
+			for (int c = i - 1; c >= 0; c--) {
 				for (int v = 1; v < x_size; v++) {
-
 					arr[c + 1][v] = arr[c][v];
-
 					arr[c][v] = 0;
-
 				}
-
 			}
 
 			//100점 추가
-
 			score += 100; 
-
 		}
 
 		cnt = 0;
-
 	}
-
 }
-
-
-
 
 
 //블록이 바닥에 닿았는지 확인하는 함수
-
 int checkFloor_Block(dest* pos, int blockNum, int shape) {
 
 	switch (blockNum) {
-
 		case 1: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 1][pos->y + 1] == 0 &&
-
 						arr[pos->x + 1][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 3] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x + 4][pos->y] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			break;
 
 		case 2: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 2][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						arr[pos->x + 2][pos->y + 2] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x + 3][pos->y] == 0 && arr[pos->x + 1][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 1][pos->y + 1] == 0 &&
-
 						arr[pos->x + 2][pos->y + 2] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x + 3][pos->y] == 0 && arr[pos->x + 3][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			break;
 
 		case 3: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 2][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						arr[pos->x + 2][pos->y + 2] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x + 3][pos->y] == 0 && arr[pos->x + 3][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x + 2][pos->y] == 0 && arr[pos->x + 1][pos->y + 1] == 0 &&
-
 						arr[pos->x + 1][pos->y + 2] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 3][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			break;
 
 		case 4: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 2][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			break;
 
 		case 5: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 2][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						arr[pos->x + 1][pos->y + 2] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x + 2][pos->y] == 0 && arr[pos->x + 3][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			break;
 
 		case 6:
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 2][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						arr[pos->x + 2][pos->y + 2] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x + 3][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						arr[pos->x + 1][pos->y + 2] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x + 2][pos->y] == 0 && arr[pos->x + 3][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			break;
 
 		case 7: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						arr[pos->x + 2][pos->y + 2] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x + 3][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0) return 0; // not floor
-
 				else return 1; // floor or contact the block
-
 			}
-
 			break;
 
 	}
-
 }
-
 
 
 //회전 가능한지 판단해주는 함수
-
 int checkSpin(dest* pos, int blockNum, int shape) { // 가능하면 1, 불가능하면 0
-
 	switch (blockNum) {
-
 		case 1: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 2][pos->y] == 0 &&
-
 						arr[pos->x + 3][pos->y] == 0) return 1; // possible
-
 				else return 0; // impossible
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x][pos->y + 2] == 0 &&
-
 						arr[pos->x][pos->y + 3] == 0) return 1; // possible
-
 				else return 0; // impossible
-
 			}
-
 			break;
 
 		case 2: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x + 2][pos->y] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 2] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x + 1][pos->y + 1] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						arr[pos->x + 2][pos->y] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 1][pos->y] == 0 &&
-
 						arr[pos->x + 1][pos->y + 2] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 3: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 2][pos->y] == 0 &&
-
 						arr[pos->x + 2][pos->y + 1] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x][pos->y + 2] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x + 1][pos->y + 1] == 0 && arr[pos->x + 2][pos->y + 1] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 1][pos->y + 2] == 0 &&
-
 						arr[pos->x][pos->y + 2] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 4: 
-
 			//nothing
-
 			break;
 
 		case 5: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x][pos->y + 2] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 6: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 2][pos->y] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x][pos->y + 2] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 2][pos->y + 1] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x + 1][pos->y + 2] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 7: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 2][pos->y] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 1][pos->y + 2] == 0) return 1;
-
 				else return 0;
-
 			}
-
 			break;
 
 	}
-
 }
-
 
 
 //블록회전함수(shape변경)
-
 void spin(int bNum) {
-
 	switch (bNum) { // 블록 종류에 따라 다르기 때문에 설정.
-
 		//4가지종류
-
 		case 2:case 3:case 6:
-
 			if (checkSpin(&coord, blockNum, shape)) { // 회전 가능한지 체크
-
 				blockEdit(&coord, blockNum, 0, shape);
-
 				shape = (shape % 4) + 1;
-
 				blockEdit(&coord, blockNum, 1, shape);
-
 			}
-
 			break;
-
-
 
 			//2가지종류
-
 		case 1:case 5:case 7:
-
 			if (checkSpin(&coord, blockNum, shape)) { // 회전 가능한지 체크
-
 				blockEdit(&coord, blockNum, 0, shape);
-
 				shape = (shape % 2) + 1;
-
 				blockEdit(&coord, blockNum, 1, shape);
-
 			}
-
 			break;
 
-
-
 			//1가지 종류
-
 		case 4:
-
 			//nothing
-
 			shape = 1;
-
 			break;
 
 	}
-
 }
-
-
-
 
 
 //움직일 수 있는지 확인해주는 함수
-
 int checkMove(dest* pos, int blockNum, int shape, int l_r) { //l_r = 왼쪽움직임인지(1), 오른쪽움직임인지(0)
-
 	switch (blockNum) {
-
 		case 1:
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 4] == 0 && l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && arr[pos->x + 2][pos->y - 1] == 0 && 
-
 						arr[pos->x + 3][pos->y - 1] == 0 && l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x + 1][pos->y + 1] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						arr[pos->x + 3][pos->y + 1] == 0 && l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 2:
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x + 1][pos->y + 3] == 0 && l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && arr[pos->x + 2][pos->y - 1] == 0 && 
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 1] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
 
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y + 1] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 3] == 0 && arr[pos->x + 1][pos->y + 3] == 0 && 
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 2][pos->y - 1] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 2] == 0 && arr[pos->x + 2][pos->y + 2] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 3:
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 3] == 0 && arr[pos->x + 1][pos->y + 3] == 0 && 
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && arr[pos->x + 2][pos->y - 1] == 0 && 
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x + 1][pos->y + 1] == 0 && arr[pos->x + 2][pos->y + 2] == 0 && 
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 3] == 0 && arr[pos->x + 1][pos->y + 1] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y] == 0 && arr[pos->x + 2][pos->y] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 2] == 0 && arr[pos->x + 2][pos->y + 2] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 4: 
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 2] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 5:
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 1][pos->y - 1] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 3] == 0 && arr[pos->x + 1][pos->y + 2] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && arr[pos->x + 2][pos->y] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x + 1][pos->y + 2] == 0 && arr[pos->x + 2][pos->y + 2] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 6:
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && 
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 3] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && arr[pos->x + 2][pos->y - 1] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 1] == 0 && arr[pos->x + 1][pos->y + 2] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 3) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 3] == 0 && arr[pos->x + 1][pos->y + 2] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 4) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && arr[pos->x + 2][pos->y] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 2] == 0 && arr[pos->x + 2][pos->y + 2] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			break;
 
 		case 7:
-
 			if (shape == 1) {
-
 				if (arr[pos->x][pos->y - 1] == 0 && arr[pos->x + 1][pos->y] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 3] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			else if (shape == 2) {
-
 				if (arr[pos->x][pos->y] == 0 && arr[pos->x + 1][pos->y - 1] == 0 && arr[pos->x + 2][pos->y - 1] == 0 &&
-
 						l_r == 1) return 1; //left check
-
 				else if (arr[pos->x][pos->y + 2] == 0 && arr[pos->x + 1][pos->y + 2] == 0 && arr[pos->x + 2][pos->y + 1] == 0 &&
-
 						l_r == 0) return 1; //right check
-
 				else return 0;
-
 			}
-
 			break;
 
 	}
-
 }
-
 
 
 //블럭선택해주는 함수(랜덤)
-
 void chooseBlock() {
-
 	int random;
-
 	random = rand() % 7;
-
 	next_blockNum = random + 1;
-
 }
-
 
 
 //다음 블럭 보여주기
-
 void showNextBlock(int next) {
-
 	switch (next) {
-
 		case 1:
-
 			gotoxy(30, 6); printf("        "); // erase
-
 			gotoxy(30, 7); printf("        "); // erase
-
 			gotoxy(30, 6); printf("▣▣▣▣"); // make
-
 			break;
 
 		case 2:
-
 			gotoxy(30, 6); printf("        "); // erase
-
 			gotoxy(30, 7); printf("        "); // erase
-
 			gotoxy(30, 6); printf("▣"); // make
-
 			gotoxy(30, 7); printf("▣▣▣"); // make
-
 			break;
 
 		case 3:
-
 			gotoxy(30, 6); printf("        "); // erase
-
 			gotoxy(30, 7); printf("        "); // erase
-
 			gotoxy(30, 6); printf("    ▣"); // make
-
 			gotoxy(30, 7); printf("▣▣▣"); // make
-
 			break;
 
 		case 4:
-
 			gotoxy(30, 6); printf("        "); // erase
-
 			gotoxy(30, 7); printf("        "); // erase
-
 			gotoxy(30, 6); printf("▣▣"); // make
-
 			gotoxy(30, 7); printf("▣▣"); // make
-
 			break;
 
 		case 5:
-
 			gotoxy(30, 6); printf("        "); // erase
-
 			gotoxy(30, 7); printf("        "); // erase
-
 			gotoxy(30, 6); printf("  ▣▣"); // make
-
 			gotoxy(30, 7); printf("▣▣"); // make
-
 			break;
 
 		case 6:
-
 			gotoxy(30, 6); printf("        "); // erase
-
 			gotoxy(30, 7); printf("        "); // erase
-
 			gotoxy(30, 6); printf("  ▣"); // make
-
 			gotoxy(30, 7); printf("▣▣▣"); // make
-
 			break;
 
 		case 7:
-
 			gotoxy(30, 6); printf("        "); // erase
-
 			gotoxy(30, 7); printf("        "); // erase
-
 			gotoxy(30, 6); printf("▣▣"); // make
-
 			gotoxy(30, 7); printf("  ▣▣"); // make
-
 			break;
 
 	}
-
 }
 
 
-
-void show_data() { // 게임마다 바뀌는 변수 출력
-
+// 게임마다 바뀌는 변수 출력
+void show_data() {
 	//show next block(30, 6)
 	showNextBlock(next_blockNum);
-
 
 	//score & speed
 	gotoxy(27, 11);
 	printf("your score : [ %d ]", score);
 	gotoxy(27, 13);
 	printf("speed level : [ %d ]", scoreCheck/500);
-
 }
 
 
-void show_bg() { // 바뀌지 않는, 기본적인 값 배경에 찍어주는 함수
+// 바뀌지 않는, 기본적인 값 배경에 찍어주는 함수
+void show_bg() {
 	//
 	//gotoxy(46, 4);
 	//printf("Made by");
